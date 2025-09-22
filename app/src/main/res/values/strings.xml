@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Agri.ai</string>
+
+    <!-- Starting Activity -->
+    <string name="welcome_title">Farm Monitor</string>
+    <string name="welcome_subtitle">Monitor your farm sensors in real-time</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_sign_up">Sign Up</string>
+
+    <!-- Authentication -->
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login_text">Login</string>
+    <string name="btn_sign_up_text">Sign Up</string>
+    <string name="text_have_account">Already have an account? Login</string>
+    <string name="text_no_account">Don\'t have an account? Sign Up</string>
+
+    <!-- Validation Messages -->
+    <string name="error_empty_name">Please enter your name</string>
+    <string name="error_empty_email">Please enter your email</string>
+    <string name="error_invalid_email">Please enter a valid email</string>
+    <string name="error_empty_password">Please enter your password</string>
+    <string name="error_short_password">Password must be at least 6 characters</string>
+
+    <!-- Home Activity -->
+    <string name="title_home">Farm Monitor</string>
+    <string name="label_select_farm">Select Farm:</string>
+    <string name="action_logout">Logout</string>
+
+    <!-- Farm Data -->
+    <string name="status_raspberry_pi">Raspberry Pi Status</string>
+    <string name="status_online">Online</string>
+    <string name="status_offline">Offline</string>
+    <string name="badge_online">ONLINE</string>
+    <string name="badge_offline">OFFLINE</string>
+
+    <string name="sensor_temperature">Temperature</string>
+    <string name="sensor_humidity">Humidity</string>
+    <string name="sensor_soil_moisture">Soil Moisture</string>
+    <string name="sensor_light_level">Light Level</string>
+
+    <string name="no_data_title">No data available</string>
+    <string name="no_data_subtitle">Check if Raspberry Pi is connected</string>
+    <string name="last_updated">Last updated: %s</string>
+
+    <!-- Farm Names -->
+    <string-array name="farm_names">
+        <item>Farm 1</item>
+        <item>Farm 2</item>
+        <item>Farm 3</item>
+        <item>Farm 4</item>
+    </string-array>
+</resources>
