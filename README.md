@@ -4,39 +4,41 @@
 
 A comprehensive Android application for real-time farm monitoring using Raspberry Pi sensors, Firebase integration, and intelligent automation controls. Monitor environmental conditions, control irrigation systems, and receive data-driven insights for optimal crop management.
 
-<div align="center">
-  <img src="screenshots/app_logo.png" alt="AgriSmart Logo" width="120" height="120">
-</div>
+<img src="screenshots/app_logo.png" alt="AgriSmart Logo" width="120" height="120">
 
-## 📱 Screenshots
+---
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="src/SCREENSHOTS/starting.png" alt="Starting Screen" width="250">
-      <br><strong>Starting Screen</strong>
-    </td>
-    <td align="center">
-      <img src="app/src/SCREENSHOTS/login.png" alt="Login Screen" width="250">
-      <br><strong>Login Screen</strong>
-    </td>
-    <td align="center">
-      <img src="app/src/SCREENSHOTS/home.png" alt="Dashboard" width="250">
-      <br><strong>Farm Dashboard</strong>
-    </td>
-  </tr>
-  <tr>
-    
-    <td align="center">
-      <img src="app/src/SCREENSHOTS/mannual.png" alt="Manual Control" width="250">
-      <br><strong>Equipment Control</strong>
-    </td>
-    <td align="center">
-      <img src="app/src/SCREENSHOTS/about.png" alt="About Screen" width="250">
-      <br><strong>User Profile</strong>
-    </td>
-  </tr>
-</table>
+## 📱 Screenshots  
+
+### 🚀 Starting Screen  
+<img src="src/SCREENSHOTS/starting.png" alt="Starting Screen" width="300">  
+A welcoming screen with animations and entry point to the app.  
+
+---
+
+### 🔑 Login Screen  
+<img src="app/src/SCREENSHOTS/login.png" alt="Login Screen" width="300">  
+User authentication screen supporting Firebase login and signup.  
+
+---
+
+### 📊 Farm Dashboard  
+<img src="app/src/SCREENSHOTS/home.png" alt="Farm Dashboard" width="300">  
+Displays real-time environmental data such as temperature, humidity, soil moisture, and light levels.  
+
+---
+
+### 🎮 Equipment Control  
+<img src="app/src/SCREENSHOTS/mannual.png" alt="Manual Control" width="300">  
+Allows farmers to manually control irrigation, fans, and lighting with emergency stop features.  
+
+---
+
+### 👤 User Profile  
+<img src="app/src/SCREENSHOTS/about.png" alt="About Screen" width="300">  
+Profile management and app details with farm statistics overview.  
+
+---
 
 ## ✨ Features
 
@@ -68,54 +70,59 @@ A comprehensive Android application for real-time farm monitoring using Raspberr
 - User profile management
 - City-based weather information
 
+---
+
 ## 🏗️ Project Structure
 
-```
 app/
 ├── src/main/java/com/farmmonitor/agriai/
-│   ├── fragments/
-│   │   └── HomeFragment.java              # Farm selector and data display
-│   ├── AboutFragment.java                 # User profile and app information
-│   ├── FarmDataFragment.java             # Sensor data visualization
-│   ├── HomeActivity.java                 # Farm selection activity
-│   ├── LoginActivity.java                # User authentication
-│   ├── MainActivity.java                 # App entry point and routing
-│   ├── MainDashboardActivity.java        # Main dashboard with navigation
-│   ├── ManualFragment.java              # Equipment control interface
-│   ├── RetrofitClient.java              # HTTP client for weather API
-│   ├── SensorData.java                  # Data model for sensor readings
-│   ├── SignUpActivity.java              # User registration
-│   ├── StartingActivity.java            # Welcome screen with animations
-│   ├── WeatherApi.java                  # Weather API interface
-│   └── WeatherResponse.java             # Weather data model
+│ ├── fragments/
+│ │ └── HomeFragment.java # Farm selector and data display
+│ ├── AboutFragment.java # User profile and app information
+│ ├── FarmDataFragment.java # Sensor data visualization
+│ ├── HomeActivity.java # Farm selection activity
+│ ├── LoginActivity.java # User authentication
+│ ├── MainActivity.java # App entry point and routing
+│ ├── MainDashboardActivity.java # Main dashboard with navigation
+│ ├── ManualFragment.java # Equipment control interface
+│ ├── RetrofitClient.java # HTTP client for weather API
+│ ├── SensorData.java # Data model for sensor readings
+│ ├── SignUpActivity.java # User registration
+│ ├── StartingActivity.java # Welcome screen with animations
+│ ├── WeatherApi.java # Weather API interface
+│ └── WeatherResponse.java # Weather data model
 │
 ├── src/main/res/
-│   ├── layout/
-│   │   ├── activity_home.xml             # Farm selector layout
-│   │   ├── activity_login.xml            # Login form layout
-│   │   ├── activity_main.xml             # Dashboard container
-│   │   ├── activity_main_dashboard.xml   # Bottom navigation layout
-│   │   ├── activity_signup.xml           # Registration form
-│   │   ├── activity_starting.xml         # Welcome screen with animations
-│   │   ├── fragment_about.xml            # User profile layout
-│   │   ├── fragment_farm_data.xml        # Sensor data cards layout
-│   │   ├── fragment_home.xml             # Home fragment container
-│   │   ├── fragment_manual.xml           # Equipment control layout
-│   │   └── spinner_item.xml              # Custom spinner item
-│   │
-│   ├── menu/
-│   │   └── bottom_nav_menu.xml           # Bottom navigation menu
-│   │
-│   ├── values/
-│   │   ├── colors.xml                    # App color palette
-│   │   ├── strings.xml                   # Text resources
-│   │   └── themes.xml                    # App themes and styles
-│   │
-│   └── drawable/                         # Icons and graphics
+│ ├── layout/
+│ │ ├── activity_home.xml # Farm selector layout
+│ │ ├── activity_login.xml # Login form layout
+│ │ ├── activity_main.xml # Dashboard container
+│ │ ├── activity_main_dashboard.xml # Bottom navigation layout
+│ │ ├── activity_signup.xml # Registration form
+│ │ ├── activity_starting.xml # Welcome screen with animations
+│ │ ├── fragment_about.xml # User profile layout
+│ │ ├── fragment_farm_data.xml # Sensor data cards layout
+│ │ ├── fragment_home.xml # Home fragment container
+│ │ ├── fragment_manual.xml # Equipment control layout
+│ │ └── spinner_item.xml # Custom spinner item
+│ │
+│ ├── menu/
+│ │ └── bottom_nav_menu.xml # Bottom navigation menu
+│ │
+│ ├── values/
+│ │ ├── colors.xml # App color palette
+│ │ ├── strings.xml # Text resources
+│ │ └── themes.xml # App themes and styles
+│ │
+│ └── drawable/ # Icons and graphics
 │
-├── build.gradle (Module: app)            # App-level dependencies
-└── AndroidManifest.xml                   # App configuration and permissions
-```
+├── build.gradle (Module: app) # App-level dependencies
+└── AndroidManifest.xml # App configuration and permissions
+
+markdown
+Copy code
+
+---
 
 ## 🛠️ Technologies Used
 
@@ -142,6 +149,8 @@ app/
 - **Sensors**: Temperature, humidity, soil moisture, light level sensors
 - **Communication**: Firebase Realtime Database for device communication
 
+---
+
 ## 📋 Prerequisites
 
 ### **Development Environment**
@@ -162,34 +171,35 @@ app/
 - OpenWeatherMap API key
 - Google Services configuration file
 
+---
+
 ## 🚀 Installation & Setup
 
 ### **1. Clone the Repository**
 ```bash
 git clone https://github.com/yourusername/agrismart-monitor.git
 cd agrismart-monitor
-```
-
-### **2. Android App Setup**
-```bash
+2. Android App Setup
+bash
+Copy code
 # Open project in Android Studio
 # File -> Open -> Select the project folder
 
 # Add Firebase configuration
 # Download google-services.json from Firebase Console
 # Place it in app/ directory
-```
-
-### **3. Configure API Keys**
-```java
+3. Configure API Keys
+java
+Copy code
 // In FarmDataFragment.java, replace with your API key
 private static final String WEATHER_API_KEY = "your_openweathermap_api_key";
-```
+4. Firebase Setup
+Create a Firebase project at Firebase Console
 
-### **4. Firebase Setup**
-1. Create a Firebase project at [Firebase Console](https://console.firebase.google.com)
-2. Enable Realtime Database with these rules:
-```json
+Enable Realtime Database with these rules:
+
+json
+Copy code
 {
   "rules": {
     "farms": {
@@ -198,21 +208,18 @@ private static final String WEATHER_API_KEY = "your_openweathermap_api_key";
     }
   }
 }
-```
-
-### **5. Build and Run**
-```bash
+5. Build and Run
+bash
+Copy code
 # Build the project
 ./gradlew build
 
 # Install on device
 ./gradlew installDebug
-```
-
-## 🔧 Configuration
-
-### **Firebase Database Structure**
-```json
+🔧 Configuration
+Firebase Database Structure
+json
+Copy code
 {
   "farms": {
     "farm_1": {
@@ -225,62 +232,73 @@ private static final String WEATHER_API_KEY = "your_openweathermap_api_key";
     "farm_2": { ... }
   }
 }
-```
-
-### **Default Login Credentials**
-```
+Default Login Credentials
+makefile
+Copy code
 Email: admin@gmail.com
 Password: 123456
-```
+📊 Usage
+Getting Started
+Launch the app and tap "Get Started"
 
-## 📊 Usage
+Login with provided credentials or create new account
 
-### **Getting Started**
-1. Launch the app and tap "Get Started"
-2. Login with provided credentials or create new account
-3. Select a farm from the dropdown menu
-4. Monitor real-time sensor data on the dashboard
+Select a farm from the dropdown menu
 
-### **Equipment Control**
-- Navigate to **Manual** tab
-- Toggle irrigation, lighting, and ventilation systems
-- Adjust light intensity and fan speed with sliders
-- Use preset lighting modes (Sunrise, Noon, Sunset)
-- Access emergency stop functionality
+Monitor real-time sensor data on the dashboard
 
-### **User Profile**
-- View user information in **About** tab
-- Check app version and feature details
-- Monitor farm statistics and status
+Equipment Control
+Navigate to Manual tab
 
-## 🤝 Contributing
+Toggle irrigation, lighting, and ventilation systems
 
+Adjust light intensity and fan speed with sliders
+
+Use preset lighting modes (Sunrise, Noon, Sunset)
+
+Access emergency stop functionality
+
+User Profile
+View user information in About tab
+
+Check app version and feature details
+
+Monitor farm statistics and status
+
+🤝 Contributing
 We welcome contributions to improve AgriSmart Monitor. Please follow these steps:
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Fork the repository
 
-### **Development Guidelines**
-- Follow Android development best practices
-- Maintain consistent code formatting
-- Add comments for complex logic
-- Test on multiple device sizes
-- Update documentation for new features
+Create a feature branch (git checkout -b feature/AmazingFeature)
 
-## 📝 API Documentation
+Commit your changes (git commit -m 'Add some AmazingFeature')
 
-### **Weather API Integration**
-```java
+Push to the branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+Development Guidelines
+Follow Android development best practices
+
+Maintain consistent code formatting
+
+Add comments for complex logic
+
+Test on multiple device sizes
+
+Update documentation for new features
+
+📝 API Documentation
+Weather API Integration
+java
+Copy code
 // Weather data retrieval
 WeatherApi api = RetrofitClient.getInstance().create(WeatherApi.class);
 api.getWeather(cityName, apiKey, "metric").enqueue(callback);
-```
-
-### **Firebase Data Structure**
-```java
+Firebase Data Structure
+java
+Copy code
 // Sensor data model
 public class SensorData {
     private Double temperature;
@@ -289,51 +307,56 @@ public class SensorData {
     private Double lightLevel;
     private Long lastUpdate;
 }
-```
+🐛 Known Issues
+ Weather data may not load without internet connection
 
-## 🐛 Known Issues
+ Raspberry Pi connection status requires manual refresh
 
-- [ ] Weather data may not load without internet connection
-- [ ] Raspberry Pi connection status requires manual refresh
-- [ ] Some animations may lag on older devices (API < 23)
+ Some animations may lag on older devices (API < 23)
 
-## 🔮 Roadmap
+🔮 Roadmap
+Version 2.0
+ Real-time push notifications for alerts
 
-### **Version 2.0**
-- [ ] Real-time push notifications for alerts
-- [ ] Historical data charts and analytics
-- [ ] Machine learning predictions for crop optimization
-- [ ] Multi-language support
+ Historical data charts and analytics
 
-### **Version 2.1**
-- [ ] Offline data synchronization
-- [ ] Custom alert thresholds
-- [ ] Export data functionality
-- [ ] Dark mode support
+ Machine learning predictions for crop optimization
 
-## 📄 License
+ Multi-language support
 
-This project is licensed under the MIT License -
-## 👥 Authors
+Version 2.1
+ Offline data synchronization
 
-- ** Raj Raushan Kumar ** - *Initial work* - https://github.com/raj9097
-## 🙏 Acknowledgments
+ Custom alert thresholds
 
-- Firebase team for excellent real-time database services
-- OpenWeatherMap for reliable weather data API
-- Material Design team for beautiful UI components
-- Raspberry Pi Foundation for affordable IoT hardware
-- Android development community for continuous support
+ Export data functionality
 
-## 📞 Support
+ Dark mode support
 
+📄 License
+This project is licensed under the MIT License
+
+👥 Authors
+Raj Raushan Kumar - Initial work - https://github.com/raj9097
+
+🙏 Acknowledgments
+Firebase team for excellent real-time database services
+
+OpenWeatherMap for reliable weather data API
+
+Material Design team for beautiful UI components
+
+Raspberry Pi Foundation for affordable IoT hardware
+
+Android development community for continuous support
+
+📞 Support
 For support and questions:
-- Email: rajraushankumar749@gmail.com
-- GitHub Issues: [Create an issue](https://github.com/raj9097/Agriculture-Monitoring-System/issues)
-- Documentation: [Project Wiki](https://github.com/raj9097/Agriculture-Monitoring-System-/wiki)
 
----
+Email: rajraushankumar749@gmail.com
 
-<div align="center">
-  <strong>Built with ❤️ for sustainable agriculture</strong>
-</div>
+GitHub Issues: Create an issue
+
+Documentation: Project Wiki
+
+<div align="center"> <strong>Built with ❤️ for sustainable agriculture</strong> </div> 
