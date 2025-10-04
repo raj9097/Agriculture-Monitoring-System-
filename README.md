@@ -7,7 +7,7 @@ A comprehensive Android application for real-time farm monitoring using Raspberr
  
 📱 Screenshots
 🚀 Starting Screen
-<img src="src/SCREENSHOTS/starting.png" alt="Starting Screen" width="300"> A welcoming screen with animations and entry point to the app.
+<img src="app/src/SCREENSHOTS/starting.png" alt="Starting Screen" width="300"> A welcoming screen with animations and entry point to the app.
 🔑 Login Screen
 <img src="app/src/SCREENSHOTS/login.png" alt="Login Screen" width="300"> User authentication screen supporting Firebase login and signup.
 📊 Farm Dashboard
